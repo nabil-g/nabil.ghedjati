@@ -1,4 +1,18 @@
+*
+{
+	font-family: 'Lato', sans-serif;
+}
+
 #grandTitre
 {
 	text-align: center;
+}
+
+.time
+{
+	font-style: ;
+}
+a{
+	text-decoration: none;
+	color: green;
 }
