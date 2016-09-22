@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 	<head>
 		<title>Bienvenue sur mon CV !</title>
 		<meta charset="utf-8">
+		<meta name="description" content="Je présente ici mon CV crée dans le cadre de la formation CODA by Simplon">
+		<meta name="keywords" content="developer,web,dev,développeur,CSS,HTML,JS,PHP,simplon,coda,codeur,internet,informatique">
 		<link rel="stylesheet" type="text/css" href="apparence.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 		<script type="text/javascript" src="script.js" ></script>
 	</head>
 	<body>
@@ -12,61 +15,71 @@
 			<h1 id="grandTitre">CV de Nabil Ghedjati</h1>
 		</header>
 
-		<section id="xp">
-			<h2>Expérience professionnelle</h2>
-			
+		<div id="navbar">
+			<ul>
+				<li><a href="#">XP</a></li>
+				<li><a href="#">School</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+
+
+		<div id="fenetre">
+			<section id="xp">
+				<h2>Expérience professionnelle</h2>
+				
+					<ul>
+						<li><span class="time">Juillet 2014</span> : Auxiliaire d'été</br>Société Générale, agence de Thiers</li>
+						
+						<li><span class="time">Années scolaires 2012/2014</span>Stagiaire (pendant 17 semaines non consécutives)</br>Caisse d'Épargne Auvergne-Limousin, agence de Thiers </br>Société Générale, agence de Beaumont </br>Société Générale, agence de Thiers</li>
+
+						<li><span class="time">Été 2012</span> : Manutentionnaire (par intérim)</br>Brüggen France (céréales)</li>
+
+						<li><span class="time">Été 2009/été 2010</span> : Agent d'entretien</br>La Rayonnante (services d'entretien)</li>
+					</ul>
+			</section>
+
+			<section id="formation">
+				<h2>Diplômes et formation</h2>
+
 				<ul>
-					<li><span class="time">Juillet 2014</span> : Auxiliaire d'été</br>Société Générale, agence de Thiers</li>
-					
-					<li><span class="time">Années scolaires 2012/2014</span>Stagiaire (pendant 17 semaines non consécutives)</br>Caisse d'Épargne Auvergne-Limousin, agence de Thiers </br>Société Générale, agence de Beaumont </br>Société Générale, agence de Thiers</li>
+					<li><span class="time">2016/2017 </span> : Formation Coda by Simplon</br>AFPA, Alès</li>
+					<li><span class="time">2014/2015 </span> : Licence Professionnelle Management des collectivités
+					territoriales (formation uniquement)</br>Université d'Auvergne, CLERMONT-FERRAND</li>
 
-					<li><span class="time">Été 2012</span> : Manutentionnaire (par intérim)</br>Brüggen France (céréales)</li>
+					<li><span class="time">2012/2014</span> : BTS Banque Option Marché des Particuliers, en formation initiale</br>Lycée Ambroise Brugière, CLERMONT-FERRAND</li>
 
-					<li><span class="time">Été 2009/été 2010</span> : Agent d'entretien</br>La Rayonnante (services d'entretien)</li>
+					<li><span class="time">2008/2010</span> : Baccalauréat Sciences et Technologies de la Gestion spécialité
+					Comptabilité et Finance d'entreprise</br>Lycée Montdory, THIERS</li>
+
 				</ul>
-		</section>
+			</section>
 
-		<section id="formation">
-			<h2>Diplômes et formation</h2>
+			<section id="infos">
+				<h2>Informations complémentaires</h2>
 
-			<ul>
-				<li><span class="time">2014/2015 </span> : Licence Professionnelle Management des collectivités
-				territoriales (formation uniquement)</br>Université d'Auvergne, CLERMONT-FERRAND</li>
+				<ul>
+					<li><span class="notTime">Langues </span> : Anglais (bon niveau oral et écrit)</li>
 
-				<li><span class="time">2012/2014</span> : BTS Banque Option Marché des Particuliers, en formation initiale</br>Lycée Ambroise Brugière, CLERMONT-FERRAND</li>
+					<li>Outils informatiques</li> <li>Word/Excel/Access/Gimp : intermédiaire</li>
+				</ul>
+			</section>
 
-				<li><span class="time">2008/2010</span> : Baccalauréat Sciences et Technologies de la Gestion spécialité
-				Comptabilité et Finance d'entreprise</br>Lycée Montdory, THIERS</li>
+			<section id="renseignements">
+				<h2>Renseignements personnels</h2>
+				<ul>
+					<li><span class="notTime">Centres d'intérêts</span> : Cinéma, nouvelles technologies, sports de montagne, tennis, photographie, musique</li>
+				</ul>
+			</section>
 
-			</ul>
-		</section>
+			<section id="contact">
+				<h3>Nabil Ghedjati</h3>
+					E-mail : <a id="email" href="mailto:nabil.ghedjati@gmail.com">nabil.ghedjati@gmail.com</a> <br>
+				</p>
+			</section>
 
-		<section id="infos">
-			<h2>Informations complémentaires</h2>
-
-			<ul>
-				<li><span class="notTime">Langues </span> : Anglais (bon niveau oral et écrit)</li>
-
-				<li>Outils informatiques</li> <li>Word/Excel/Access/Gimp : intermédiaire</li>
-			</ul>
-		</section>
-
-		<section id="renseignements">
-			<h2>Renseignements personnels</h2>
-			<ul>
-				<li><span class="notTime">Centres d'intérêts</span> : Cinéma, nouvelles technologies, sports de montagne, tennis, photographie, musique</li>
-			</ul>
-		</section>
-
-		<section id="contact">
-			<h3>Nabil Ghedjati</h3>
-			<p>27 avenue des Peupliers<br>
-				Tel : 06.27.69.61.00 <br>
-				E-mail : <a href="mailto:nabil.ghedjati@gmail.com">nabil.ghedjati@gmail.com</a> <br>
-			</p>
-		</section>
-
-
+		</div>
 
 
 

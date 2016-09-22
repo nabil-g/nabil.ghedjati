@@ -1,18 +1,41 @@
 *
 {
 	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+body
+{
+	background: url("sky.jpg") no-repeat fixed;
+	background-size: cover;
 }
 
 #grandTitre
 {
 	text-align: center;
+	font-family: 'BioRhyme', serif;
+}
+
+#navbar{
+	text-decoration: none;
+	display: flex;
 }
 
 .time
 {
 	font-style: ;
 }
-a{
+#email{
 	text-decoration: none;
 	color: green;
+}
+
+section
+{
+	margin-top: 2%;
+}
+
+#fenetre
+{
+	margin: auto;
 }
