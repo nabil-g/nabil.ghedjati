@@ -9,22 +9,54 @@ $(document).ready(function(){
 	$('ul:not(#navbar),p').hide();
 
 
-	$('#link1').click(function() {
+	$('#link1').hover(function() {
 		$('#list1').slideToggle('fast');
 	});
-	$('#link2').click(function() {
+	$('#link2').hover(function() {
 		$('#list2').slideToggle('fast');
 	});
-	$('#link3').click(function() {
+	$('#link3').hover(function() {
 		$('#list3').slideToggle('fast');
 	});
-	$('#link4').click(function() {
+	$('#link4').hover(function() {
 		$('#list4').slideToggle('fast');
 	});
-	$('#link5').click(function() {
+	$('#link5').hover(function() {
 		$('#list5').slideToggle('fast');
 	});
 
+
+	//SECONDE PARTIE : MENU DE NAVIGATION
+
+	//On cache toutes les sections par défaut
+	$('section').hide();
+
+
+
+	$('#bouton1').click(function(){
+		$('section').hide();
+		$('#one').fadeIn('fast');
+	});
+
+	$('#bouton2').click(function(){
+		$('section').hide();
+		$('#two').fadeIn('fast');
+	});
+
+	$('#bouton3').click(function(){
+		$('section').hide();
+		$('#three,#four').fadeIn('fast');
+	});
+
+	$('#bouton4').click(function(){
+		$('section').hide();
+		$('#five').fadeIn('fast');
+	});
+
+	//On se sert du titre pour faire un reset et re tout cacher.
+	$('#boutonreset').click(function(){
+		$('section').fadeOut('slow');
+	});
 
 
 
