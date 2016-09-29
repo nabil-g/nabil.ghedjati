@@ -16,9 +16,18 @@ body
 	font-family: 'BioRhyme', serif;
 }
 
+nav{
+	text-align: center;
+}
+
 #navbar{
 	text-decoration: none;
-	display: flex;
+	list-style-type: none;
+}
+
+#navbar li {
+	display: inline;
+	margin : 5px;
 }
 
 .time
