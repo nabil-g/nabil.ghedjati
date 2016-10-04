@@ -7,6 +7,11 @@
 	box-sizing: border-box;
 }
 
+::selection{
+  background-color: black;
+  color: yellow;
+}
+
 body
 {
 	background: url("sky.jpg") no-repeat fixed;
@@ -14,9 +19,10 @@ body
 	text-align: center;
 }
 
-main{
-	text-align: center;
+.grandtitlecent{
+	margin: 20px;
 }
+
 
 #grandTitre
 {
@@ -51,8 +57,10 @@ a{
 	color: green;
 }
 
-section
+section:not(#fourandfive)
 {
+	width: 30%;
+	display: inline-block;
 	margin: 20px;
 	padding: 20px;
 	background-color: rgba(0,0,0,0.5)
@@ -62,6 +70,17 @@ section
 section ul{
 	margin: 15px;
 }
+
+#threeandfour{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
 
 #fenetre
 {
