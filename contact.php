@@ -5,26 +5,27 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Je présente ici mon CV crée dans le cadre de la formation CODA by Simplon">
 		<meta name="keywords" content="developer,web,dev,développeur,CSS,HTML,JS,PHP,simplon,coda,codeur,internet,informatique">
-		<link rel="stylesheet" type="text/css" href="apparence.css">
-		<link rel="stylesheet" type="text/css" href="apparence_contact.css">
+		<link rel="stylesheet" type="text/css" href="css/apparence.css">
+		<link rel="stylesheet" type="text/css" href="css/apparence_contact.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/scriptcontact.js"></script>
 	</head>
 	<body>
 		<main>
 			<header>
-				<h1 id="grandTitre"><a id="boutonreset" href="#">CV de Nabil Ghedjati</a></h1>
+				<h1 id="grandTitre"><a id="boutonreset" href="index.php">CV de Nabil Ghedjati</a></h1>
+			</header>
 
 
 
-
-			<section >			
+			<section id="msgbox">			
 			
 
 			<?php
 				//Connexion à la base de données.
-				include('db.php');
+				include('php/db.php');
 
 
 				//RECUPERATION DES DONNEES DU FORMULAIRE DE CONTACT
@@ -55,12 +56,12 @@
 									));
 
 								// On affiche un message.
-								echo "Merci pour votre message $name_us !</br>";
+								echo "Merci pour votre message $name_us !</br></br>";
 								echo "<a href='index.php'> < Retour</a>";
 							}
 							else{
 								// S'il n'y a pas de variables de formulaire, on affiche un message d'erreur.
-								echo "Vous n'avez pas renseigné votre nom, votre adresse e-mail ou votre message !</br>";
+								echo "Vous n'avez pas renseigné votre nom, votre adresse e-mail ou votre message !</br></br>";
 								echo "<a href='index.php'> < Retour</a>";
 							}
 
