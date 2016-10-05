@@ -1,7 +1,5 @@
-*
+* /***** RESET CSS *****/
 {
-	font-family: 'Lato', sans-serif;
-	color: white;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -14,24 +12,35 @@
 
 body
 {
+	font-family: 'Lato', sans-serif;
+	color: white;
 	background: url("sky.jpg") no-repeat fixed;
 	background-size: cover;
 	text-align: center;
-}
-
-.grandtitlecent{
-	margin: 20px;
 }
 
 
 #grandTitre
 {
 	margin: 20px;
-	font-family: 'BioRhyme', serif;
+	font-size: 95px;
+	font-family: 'Pacifico', cursive;
+	margin-top: 300px;
+	
+}
+
+#grandTitre a{
+	color: #B0FAFF;
+	transition: all 0.5s;
+}
+
+#grandTitre a:hover{
+	color: #D180C0;
 }
 
 nav{
 	text-align: center;
+	display: none;
 }
 
 ul{
@@ -41,48 +50,112 @@ ul{
 
 #navbar li {
 	display: inline;
-	margin : 5px;
+	margin : 10px;
+	font-size: 20px;
 }
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
-.time
-{
-	font-style: ;
+nav ul li a{
+	transition: all 0.5s;
 }
+
+nav ul li a:hover{
+	color: #D180C0;
+}
+
+.actif{
+	color: #D180C0;
+}
+
 #email{
 	text-decoration: none;
 	color: green;
 }
 
-section:not(#fourandfive)
+section
 {
-	width: 30%;
+	width: 45%;
 	display: inline-block;
-	margin: 20px;
-	padding: 20px;
-	background-color: rgba(0,0,0,0.5)
+	margin-top: 4%;
+	padding: 30px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 8px;
 
 }
 
 section ul{
+	margin: 25px;
+}
+
+section ul li{
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+#three{
+	font-size: 14px;
+}
+
+
+#four{
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 15px;
 }
 
-#threeandfour{
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+form input, textarea, button{
+	margin: 10px;
+	border: 0;
+	border-radius: 3px;
 }
 
 
+form input, textarea{
+	width: 500px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	padding: 8px;
 
+}
 
-#fenetre
-{
-	margin: auto;
+form input:focus, textarea:focus{
+	border: 2px dashed blue;
+}
+
+form input{
+	height: 35px;
+}
+
+form textarea{
+	height: 250px;
+	resize: none;
+}
+
+form button{
+	height: 40px;
+	width: 100px;
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+form button:hover{
+	background-color: #2121FF;
+}
+
+form button:focus{
+	background-color: #0000B2;
+	color: grey;
 }

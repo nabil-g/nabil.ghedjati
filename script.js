@@ -5,6 +5,22 @@ $(document).ready(function(){
 
 	//PREMIERE PARTIE : CACHER ET FAIRE APPARAITRE LE CONTENU DE CHAQUE TITRE
 
+	
+
+	$('#boutonreset').click(function(){
+		$('#grandTitre').animate({fontSize: '40px'}, function(){
+			$('#grandTitre').animate({marginTop:'50px'}, function(){
+				$("#bouton1").addClass("actif");
+				$('nav,#one').fadeIn('slow');
+
+			});
+		});
+		
+	});
+
+
+
+	/*
 	//Je cache d'abord par défaut toutes mes listes
 	$('ul:not(#navbar),p').hide();
 
@@ -19,12 +35,11 @@ $(document).ready(function(){
 		$('#list3').slideToggle('fast');
 	});
 	$('#four').hover(function() {
-		$('#list4').slideToggle('fast');
-	});
-	$('#five').hover(function() {
-		$('#list5').slideToggle('fast');
+		$('#list4,#list5').slideToggle('fast');
 	});
 
+
+	*/
 
 	//SECONDE PARTIE : MENU DE NAVIGATION
 
@@ -33,30 +48,36 @@ $(document).ready(function(){
 
 
 
+
 	$('#bouton1').click(function(){
 		$('section').hide();
 		$('#one').fadeIn('fast');
+		$('nav ul li a').removeClass("actif");
+		$("#bouton1").addClass("actif");
 	});
 
 	$('#bouton2').click(function(){
 		$('section').hide();
 		$('#two').fadeIn('fast');
+		$('nav ul li a').removeClass("actif");
+		$("#bouton2").addClass("actif");
 	});
 
 	$('#bouton3').click(function(){
 		$('section').hide();
-		$('#threeandfour #three,#four').fadeIn('fast');
+		$('#three').fadeIn('fast');
+		$('nav ul li a').removeClass("actif");
+		$("#bouton3").addClass("actif");
 	});
 
 	$('#bouton4').click(function(){
 		$('section').hide();
-		$('#five').fadeIn('fast');
+		$('#four').fadeIn('fast');
+		$('nav ul li a').removeClass("actif");
+		$("#bouton4").addClass("actif");
 	});
 
-	//On se sert du titre pour faire un reset et re tout cacher.
-	$('#boutonreset').click(function(){
-		$('section').fadeOut('slow');
-	});
+	
 
 
 
