@@ -15,7 +15,7 @@
 	<body>
 		<main>
 			<header>
-				<h1 id="grandTitre"><a id="boutonreset" href="index.php">CV de Nabil Ghedjati</a></h1>
+				<h1 id="grandTitre"><a id="boutonreset" href="index.php">Nabil Ghedjati</a></h1>
 			</header>
 
 

@@ -1,0 +1,36 @@
+#grandTitre{
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+#msgbox{
+	display: none;
+}
+
+section{
+	text-align: center;
+	font-size: 20px;
+	align-items: center;
+
+}
+
+#searchbtn{
+	width: 120px;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+table, th, td{
+	padding: 10px;
+	/*border: 1px solid white;*/
+}
+
+th{
+	background-color: rgba(0,0,0,0.5);
+}
+
+tr{
+	background-color: rgba(255,255,255,0.1);
+}

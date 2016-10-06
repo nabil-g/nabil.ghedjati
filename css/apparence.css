@@ -1,0 +1,171 @@
+* /***** RESET CSS *****/
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection{
+  background-color: black;
+  color: yellow;
+}
+
+body
+{
+	font-family: 'Lato', sans-serif;
+	color: white;
+	background: url("sky.jpg") no-repeat fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+#petitTitre{
+	display: none;
+	font-family: 'Pacifico', cursive;
+	font-size: 60px;
+	color: #D180C0;
+}
+
+#grandTitre
+{
+	margin: 20px;
+	font-size: 95px;
+	font-family: 'Pacifico', cursive;
+	margin-top: 300px;
+	
+}
+
+#grandTitre a{
+	color: #B0FAFF;
+	transition: all 0.5s;
+}
+
+#grandTitre a:hover{
+	color: #D180C0;
+}
+
+nav{
+	text-align: center;
+	display: none;
+}
+
+ul{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#navbar li {
+	display: inline;
+	margin : 10px;
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a{
+	transition: all 0.5s;
+}
+
+nav ul li a:hover{
+	color: #D180C0;
+}
+
+.actif{
+	color: #D180C0;
+}
+
+#email{
+	text-decoration: none;
+	color: green;
+}
+
+section
+{
+	width: 45%;
+	display: inline-block;
+	margin-top: 4%;
+	padding: 30px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 8px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+section ul{
+	margin: 25px;
+}
+
+section ul li{
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+#three{
+	font-size: 14px;
+}
+
+
+#four{
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+}
+
+form input, textarea, button{
+	margin: 10px;
+	border: 0;
+	border-radius: 3px;
+}
+
+
+form input, textarea{
+	width: 500px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	padding: 8px;
+
+}
+
+form input:focus, textarea:focus{
+	border: 2px dotted blue;
+}
+
+form input{
+	height: 35px;
+}
+
+form textarea{
+	height: 250px;
+	resize: none;
+}
+
+form button{
+	height: 40px;
+	width: 100px;
+	background-color: blue;
+	color: white;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+form button:hover{
+	background-color: #2121FF;
+}
+
+form button:focus{
+	background-color: #0000B2;
+	color: grey;
+}

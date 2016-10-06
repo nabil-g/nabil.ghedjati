@@ -5,16 +5,18 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Je présente ici mon CV crée dans le cadre de la formation CODA by Simplon">
 		<meta name="keywords" content="developer,web,dev,développeur,CSS,HTML,JS,PHP,simplon,coda,codeur,internet,informatique">
-		<link rel="stylesheet" type="text/css" href="apparence.css">
+		<link rel="stylesheet" type="text/css" href="css/apparence.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js" ></script>
+		<script type="text/javascript" src="js/script.js" ></script>
 	</head>
 	<body>
 		<main>
 			<header>
-				<h1 id="grandTitre"><a id="boutonreset" href="#">CV de Nabil Ghedjati</a></h1>
+				
+				<h1 id="grandTitre"><a id="boutonreset" href="#">Nabil Ghedjati</a></h1>
+				<h2 id="petitTitre">Bienvenue !</h2>
 
 
 				<nav>
