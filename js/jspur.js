@@ -5,12 +5,13 @@
 	//si erreur vaut true,on colorise l'arrière-plan du champ concerné entré en parametre en rouge
 function surligne(champ, erreur)
 {
-	if (erreur) {
-		champ.style.backgroundColor = "rgba (255,8,8,0.25)";
-	}
-	else{
+	if (erreur) 
+		champ.style.backgroundColor = "rgba(255,8,8,0.25)";
+
+	
+	else
 		champ.style.backgroundColor = "";
-	}
+	
 }
 
 
@@ -21,11 +22,15 @@ function verifNom(champ)
 	if (champ.value.length <2 || champ.value.length > 50)
 	{
 		surligne(champ,true); //j'exécute alors la fonction qui s'appliquera au champ concerné et retournera faux.
+		$('#erreurNom').css("opacity","1"); //J'utilise jQuery pour faire apparaitre un element transparent
+		$('#checkNom').css("opacity","0");
 		return false;
 	}
 	else
 	{
 		surligne(champ,false);
+		$('#erreurNom').css("opacity","0"); //J'utilise jQuery pour cette fois faire cacher un element transparent
+		$('#checkNom').css("opacity","1");
 		return true;
 	}
 }
@@ -39,11 +44,15 @@ function verifMail(champ)
 	if(!regex.test(champ.value)) //Avec la fonction test appliqué au regex sur la valeur du champ (en parametre), je vérifie que la valeur du champ respecte le regex. Dans ce cas précis, je vérifie s'il ne le respecte pas avec "!" (différent de).
 	{
 		surligne(champ, true);
+		$('#erreurMail').css("opacity","1");
+		$('#checkMail').css("opacity","0");
 		return false;
 	}
 	else
 	{
 		surligne(champ, false);
+		$('#erreurMail').css("opacity","0");
+		$('#checkMail').css("opacity","1");
 		return true;
 	}
 
@@ -56,11 +65,15 @@ function verifMsg(champ)
 	if (champ.value.length <2 || champ.value.length >1500)
 	{
 		surligne(champ,true); 	// Si la longueur de la donnée du champ nom est inférieur à 2 caractères ou supérieur à 1500
+		$('#erreurMsg').css("opacity","1");
+		$('#checkMsg').css("opacity","0");
 		return false;
 	}
 	else
 	{
 		surligne(champ,false);
+		$('#erreurMsg').css("opacity","0");
+		$('#checkMsg').css("opacity","1");
 		return true;
 	}
 }
@@ -77,9 +90,12 @@ function verifForm(f) //le paramètre f, sera remplacé à l'exécution par le m
 	if(nomOk && mailOk && msgOk)
 	{
 		return true;
+		$('#erreurForm').css("opacity","0");
 	}
 	else
 	{
-		alert("Veuillez remplir correctement tous les champs.");
+		$('#erreurForm').css("opacity","1");
+		
+		return false;
 	}
 }

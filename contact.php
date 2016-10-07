@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/apparence.css">
 		<link rel="stylesheet" type="text/css" href="css/apparence_contact.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/scriptcontact.js"></script>
 	</head>

@@ -21,7 +21,7 @@ body
 
 #petitTitre{
 	display: none;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Satisfy', cursive;
 	font-size: 60px;
 	color: #D180C0;
 }
@@ -30,7 +30,7 @@ body
 {
 	margin: 20px;
 	font-size: 95px;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Satisfy', cursive;
 	margin-top: 300px;
 	
 }
@@ -123,11 +123,13 @@ form{
 }
 
 form input, textarea, button{
-	margin: 10px;
 	border: 0;
 	border-radius: 3px;
 }
 
+form label{
+	margin: 10px;
+}
 
 form input, textarea{
 	width: 500px;
@@ -168,4 +170,22 @@ form button:hover{
 form button:focus{
 	background-color: #0000B2;
 	color: grey;
+}
+
+#erreurForm,#erreurNom, #erreurMail, #erreurMsg{
+	font-size: 16px;
+	color: red;
+	opacity: 0;
+}
+
+[class*="entypo-"]:before{
+    font-family: 'entypo', sans-serif;
+    font-size: 16px;
+    color: white;
+   
+}
+
+#checkNom, #checkMail, #checkMsg{
+	opacity: 0;
+
 }
