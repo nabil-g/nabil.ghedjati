@@ -34,9 +34,9 @@
 							// Le suffixe us qui termine les variables résultant d'un formulaire me permet de les distinguer des autres variables (user string).
 
 							// On teste la présence de ces variables envoyées via le formulaire
-							if(isset($_POST['name']) AND isset($_POST['mailaddress']) AND isset($_POST['message']) AND !empty($_POST['name']) AND !empty($_POST['mailaddress']) AND !empty($_POST['message'])) {
+							if(isset($_POST['nom']) AND isset($_POST['mailaddress']) AND isset($_POST['message']) AND !empty($_POST['nom']) AND !empty($_POST['mailaddress']) AND !empty($_POST['message'])) {
 								//On supprime les potentielles balises HTML et on enregistre les variables du formulaire dans d'autres variables, plus lisibles.
-								$name_us = strip_tags($_POST['name']);
+								$name_us = strip_tags($_POST['nom']);
 								$address_us = strip_tags($_POST['mailaddress']);
 								$msg_us = strip_tags($_POST['message']);
 
