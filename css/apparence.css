@@ -180,12 +180,14 @@ form button:focus{
 
 [class*="entypo-"]:before{
     font-family: 'entypo', sans-serif;
-    font-size: 16px;
-    color: white;
+    font-size: 25px;
+    margin-left: 5px;
+
    
 }
 
 #checkNom, #checkMail, #checkMsg{
 	opacity: 0;
+	color: green;
 
 }
