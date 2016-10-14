@@ -7,6 +7,11 @@
 	display: none;
 }
 
+#field{
+	width: 60%;
+}
+
+
 section{
 	text-align: center;
 	font-size: 20px;
@@ -16,13 +21,15 @@ section{
 
 #searchbtn{
 	width: 120px;
+	margin: 20px;
 }
 
-table{
+#tabhisto{
 	border-collapse: collapse;
+	margin: auto;
 }
 
-table, th, td{
+#tabhisto, th, td{
 	padding: 10px;
 	/*border: 1px solid white;*/
 }

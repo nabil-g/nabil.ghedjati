@@ -20,8 +20,8 @@
 
 
 
-			<section id="msgbox">			
-			
+			<section id="msgbox">
+
 
 			<?php
 				//Connexion à la base de données.
@@ -44,15 +44,16 @@
 								//ENREGISTREMENT DES DONNEES DANS LA BASE DE DONNEES
 
 								//On prépare la requete d'insertion avant de lui insérer les variables de l'utilisateur (afin d'eviter des injections SQL).
-								$req = $bdd_cv->prepare('INSERT INTO messages(nom, mail, message, date) 
-									VALUES(:nom, :mail, :message, :date)');
+								$req = $bdd_cv->prepare('INSERT INTO messages(nom, mail, message, date, time)
+									VALUES(:nom, :mail, :message, :date, :time)');
 
 								//On exécute la requete avec les variables "nettoyées" des éventuelles injections SQL.
 								$req->execute(array(
-									'nom' => $name_us, 
-									'mail' => $address_us, 
-									'message' => $msg_us, 
-									'date' => date("Y-m-d H:i:s"),
+									'nom' => $name_us,
+									'mail' => $address_us,
+									'message' => $msg_us,
+									'date' => date("Y-m-d"),
+									'time' => date("H:i:s"),
 									));
 
 								// On affiche un message.
@@ -74,7 +75,7 @@
 
 			</section>
 
-			
+
 
 
 		</main>

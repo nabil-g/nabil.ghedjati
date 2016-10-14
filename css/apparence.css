@@ -32,7 +32,7 @@ body
 	font-size: 95px;
 	font-family: 'Satisfy', cursive;
 	margin-top: 300px;
-	
+
 }
 
 #grandTitre a{
@@ -86,7 +86,7 @@ section
 {
 	width: 45%;
 	display: inline-block;
-	margin-top: 4%;
+	margin: 4%;
 	padding: 30px;
 	background-color: rgba(0,0,0,0.5);
 	border-radius: 8px;
@@ -183,7 +183,7 @@ form button:focus{
     font-size: 25px;
     margin-left: 5px;
 
-   
+
 }
 
 #checkNom, #checkMail, #checkMsg{
