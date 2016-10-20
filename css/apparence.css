@@ -26,21 +26,30 @@ body
 	color: #D180C0;
 }
 
-#grandTitre
+.grandTitre1
 {
-	margin: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	font-size: 95px;
 	font-family: 'Satisfy', cursive;
-	margin-top: 300px;
-
+	margin: auto;
+	height: 200px;
+	width: 600px;
 }
 
-#grandTitre a{
+.grandTitre2{
+	font-family: 'Satisfy', cursive;
+}
+
+.grandTitre1 a, .grandTitre2 a{
 	color: #B0FAFF;
 	transition: all 0.5s;
 }
 
-#grandTitre a:hover{
+.grandTitre1 a:hover, .grandTitre2 a{
 	color: #D180C0;
 }
 

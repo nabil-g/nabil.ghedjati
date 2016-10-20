@@ -10,4 +10,25 @@
 								die('Erreur : '. $e->getMessage());
 							}
 
+/*
+							function requete(){
+								//On prépare la requete (afin d'eviter des injections SQL).
+								$r = $bdd_cv->prepare('SELECT ID, nom, mail, message, date, time FROM messages');
+
+								//On exécute la requete avec les variables "nettoyées" des éventuelles injections SQL.
+								$r->execute(array());
+
+								return $r;
+							}
+
+							function requeteAuteur(keyword){
+								$r = $bdd_cv->prepare('SELECT ID, nom, mail, message, date, time FROM messages WHERE nom = ?');
+
+								//On exécute la requete avec les variables "nettoyées" des éventuelles injections SQL.
+								$r->execute(array(keyword));
+
+								return $r;
+							}*/
+
+
 ?>
