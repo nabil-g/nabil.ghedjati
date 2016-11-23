@@ -10,10 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="js/scriptcontact.js"></script>
-		<script type="text/javascript" src="js/script_histo.js">
 
-		</script>
 	</head>
 	<body>
 		<main>
@@ -25,53 +22,51 @@
 
 			<section id="field">
 
-			<form action="#">
-				<label for="nomauteur">Rechercher par auteur</label>
-				<input type="text" name="nomauteur" <?php echo 'value="'. $_GET['nomauteur'] .'"'; ?>  autofocus>
-				<button id="searchbtn" type="submit">Rechercher</button>
-			</form>
-			<?php
-				//Connexion à la base de données.
-				include('php/db.php');
-
-
-
-
-
-
-								//LECTURE DE DONNEES DANS LA BASE DE DONNEES
-
-								//On prépare la requete (afin d'eviter des injections SQL).
-								$req = $bdd_cv->prepare('SELECT ID, nom, mail, message, date, time FROM messages');
-
-								//On exécute la requete avec les variables "nettoyées" des éventuelles injections SQL.
-								$req->execute(array());
-
-								//On utilise une boucle pr lister tous les elements de la table (je les intègre en même temps dans un tableau HTML)
-								echo '<table id="tabhisto"><tr><th>N°</th><th>Nom</th><th>Adresse e-mail</th><th>Date</th><th>Heure</th><th>Message</th></tr>';
-								while ($donnees = $req->fetch()) {
-									echo "<tr><td>" . $donnees['ID']."</td><td>". $donnees['nom'] . "</td><td>" . $donnees['mail'] . "</td><td>" . $donnees['date'] ."</td><td>".$donnees['time']. "</td><td>" . $donnees['message'] . "</td></tr>" ;
-								}
-								echo "</table>";
-
-
-								$req->closeCursor();
-
-
-
-
-
-
-
-
-			?>
-
+				<form id="monform" action="#">
+					<label for="nomauteur">Rechercher par auteur</label>
+					<input type="text" name="nomauteur" id="champ" placeholder="Rechercher" onkeyup="search()" autocomplete="off" autofocus>
+					<!-- <button id="searchbtn" type="submit">Rechercher</button> -->
+				</form>
 
 			</section>
 
+			<div id="tab">
+
+			</div>
 
 
 
 		</main>
+
+		<script type="text/javascript">
+
+			function search() {
+				event.preventDefault();
+		   	var nom = $('#champ').val();
+
+		     $.ajax({
+		       method: 'POST', // On indique le type de requete http
+		       url: 'php/search.php', // l'adresse de la page de réception
+		       data: {
+						 nomauteur : '%' + nom + '%' // pour la recherche dynamique en sql il faut préalablement envoyer le contenu du champ entouré du symbole %
+					 },
+		       success: function(data) { // en cas de succés
+		        console.log(nom.length);
+						if (nom.length > 0) { // si le contenu champ est inférieur à 1,
+							$('#tab').html(data);
+						} else {
+							$('#tab').html(""); // on supprime le contenu de la div
+						}
+
+		       },
+		       error: function(){ // en cas d'erreur
+
+		       alert('La requête n\'a pas aboutie !');
+		       }
+			  	});
+			}
+
+
+		</script>
 	</body>
 </html>

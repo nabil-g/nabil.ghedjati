@@ -212,3 +212,9 @@ form button:focus{
 	color: green;
 
 }
+
+/* Pour l'historique */
+
+#tabhisto{
+	width: 60%;
+}
