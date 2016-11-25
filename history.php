@@ -53,9 +53,9 @@
 		       success: function(data) { // en cas de succés
 		        console.log(nom.length);
 						if (nom.length > 0) { // si le contenu champ est inférieur à 1,
-							if (data.length > 0) {
-								$('#tab').html('<table id="tabhisto"><tr><th>N°</th><th>Nom</th><th>Adresse e-mail</th><th>Date</th><th>Heure</th><th>Message</th></tr></table>');
-								$('#tabhisto').append(data);
+							if (data.length > 0) { // si la réponse n'est pas vide
+								$('#tab').html('<table id="tabhisto"><tr><th>N°</th><th>Nom</th><th>Adresse e-mail</th><th>Date</th><th>Heure</th><th>Message</th></tr></table>'); // je crée le tableau enn jquery
+								$('#tabhisto').append(data); // et je rajoute dans ce tableau le contenu de la requete
 							}
 							else {
 								$('#tab').html("<h2>Aucun résultat</h2>");
