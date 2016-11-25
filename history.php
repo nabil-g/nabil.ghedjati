@@ -53,7 +53,13 @@
 		       success: function(data) { // en cas de succés
 		        console.log(nom.length);
 						if (nom.length > 0) { // si le contenu champ est inférieur à 1,
-							$('#tab').html(data);
+							if (data.length > 0) {
+								$('#tab').html('<table id="tabhisto"><tr><th>N°</th><th>Nom</th><th>Adresse e-mail</th><th>Date</th><th>Heure</th><th>Message</th></tr></table>');
+								$('#tabhisto').append(data);
+							}
+							else {
+								$('#tab').html("<h2>Aucun résultat</h2>");
+							}
 						} else {
 							$('#tab').html(""); // on supprime le contenu de la div
 						}
